@@ -1,3 +1,4 @@
+
 import pandas as pd
 
 def preprocess_data(df):
@@ -127,5 +128,5 @@ def fill_na(df):
     return df
 
 def drop_duplicates(df):
-    df.drop_duplicates(inplace=True)
+    df.drop_duplicates(subset=['customer'], inplace=True)
     return df
